@@ -87,6 +87,15 @@ CashBFF exposes 17 tools: 8 that read your money and 9 that write. Every write p
 - Bank connections are handled by Plaid. CashBFF uses your data to answer your questions and nothing more.
 - More detail lives on [security](https://cashbff.com/security), [privacy](https://cashbff.com/privacy), and [terms](https://cashbff.com/terms).
 
+## Troubleshooting
+
+- **The connector will not connect.** Confirm the URL is exactly `https://api.cashbff.com/mcp`. On first connect a browser window opens to sign in.
+- **Sign-in.** You sign in with your phone number, then the one-time code sent to it. A CashBFF Talk subscription is required to connect; a free trial is available at [cashbff.com](https://cashbff.com).
+- **"Authorization failed" or the connection drops.** Remove the connector and add it again to run a fresh sign-in. Access tokens refresh automatically once connected.
+- **A tool returns "not authenticated."** Your session expired; reconnect the server.
+- **No data appears.** Connect a bank through CashBFF first so there is data to read. Reviewers can use the provided test account, which is preloaded with sample data.
+- **Still stuck?** Email [daksh@cashbff.com](mailto:daksh@cashbff.com).
+
 ## About
 
 CashBFF is built by [Daksh Khanna](https://khannadaksh.com) (Khanna's LLC).
